@@ -1,0 +1,51 @@
+@import "./_theme.scss";
+
+@import "./components/Header.scss";
+@import "./components/NavBar.scss";
+@import "./components/Main.scss";
+@import "./components/Footer.scss";
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  width: 384px;
+  height: 256px;
+
+  padding: 8px;
+  padding-bottom: 0;
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  background-color: theme-get("colorBackground");
+}
+
+.IconButton {
+  cursor: pointer;
+}
+
+a {
+  color: theme-get("colorTextLink");
+  text-decoration: none;
+
+  :hover {
+    color: theme-get("colorTextLinkThemed")
+  }
+
+  :visited {
+    color: theme-get("colorTextLinkVisited")
+  }
+}
+

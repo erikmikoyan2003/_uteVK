@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                 
+    "sourceMap": true,
+    "module": "commonjs",                              
+    "types": ["chrome"],                                
+    "esModuleInterop": true,                            
+    "forceConsistentCasingInFileNames": true,          
+    "strict": true,                                    
+    "skipLibCheck": true,
+    "jsx": "react"
+  }
+}

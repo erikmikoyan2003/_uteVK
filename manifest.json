@@ -7,7 +7,7 @@
         "256":"icons/favicon-256.png"
     },
     "action": {
-        "default_popup":"./popup/public/index.html"
+        "default_popup":"./popup/dist/index.html"
     },
     "permissions": ["scripting", "activeTab", "storage"],
     "content_scripts": [

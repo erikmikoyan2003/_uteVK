@@ -1,0 +1,51 @@
+@import "./../_theme.scss";
+
+.Footer {
+    @include theme();
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    gap: 32px;
+  
+    height: 32px;
+    line-height: 32px;
+  
+    .Footer-Text {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      color: theme-get("colorTextTertiary");
+  
+      a {
+        font-style: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+  
+        color: theme-get("colorTextLink");
+      }
+    }
+  
+    .Footer-Icon {
+      .Footer-IconButton {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+  
+        height: 32px;
+        width: 26px;
+  
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: theme-get("colorIconSecondary");;
+        }
+
+        :hover {
+            fill: theme-get("colorIconMedium");
+        }
+      }
+    }
+  }

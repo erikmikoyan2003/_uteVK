@@ -1,0 +1,73 @@
+@import "./../_theme.scss";
+
+.NavBar {
+    @include theme();
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // padding: ;
+  
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  
+    background-color: theme-get("colorHeaderBackground");
+    box-shadow: inset 0 -1px 0 theme-get("colorSeparatorSecondary");
+  
+    .Tab {
+      color: theme-get("colorTextTertiary");
+      fill: theme-get("colorTextTertiary");
+      cursor: pointer;
+  
+      width: 100%;
+  
+      height: 32px;
+  
+      .Tab-Item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        height: 32px;
+  
+        gap: 2px;
+  
+        // padding-bottom: 8px;
+  
+        .Tab-Item_content_icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          width: 24px;
+          height: 24px;
+  
+          .IconButton {
+            width: 20px;
+            height: 20px;
+          }
+        }
+  
+        .Tab-Item_content_title {
+          h2 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  
+    .Tab._active {
+      color: theme-get("colorTextPrimaryLight");
+      fill: theme-get("colorTextPrimaryLight");
+  
+      box-shadow: inset 0 -2px 0 theme-get("colorStrokeAccent");
+    }
+  
+    .Tab._unActive:hover {
+      color: theme-get("colorTextSecondary");
+      fill: theme-get("colorTextSecondary");
+  
+      box-shadow: inset 0 -2px 0 theme-get("colorSeparatorPrimaryAlpha");
+    }
+  }

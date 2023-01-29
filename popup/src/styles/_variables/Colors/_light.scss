@@ -1,0 +1,190 @@
+////////// TEКСТ
+
+$colorTextPrimaryLight: #000000;
+// Основной цвет текста
+
+$colorTextPrimaryInvariably: #000000;
+// Основной цвет текста не меняется в зависимости от темы
+
+$colorTextSecondary: #818C99;
+// Второстепенный цвет для текста
+
+$colorTextTertiary: #99A2AD;
+// Третичный текст, мета-информация
+
+$colorTextSubhead: #6D7885;
+// Подзаголовок или чуть более важный текст, чем вторичный
+
+$colorTextContrast: #FFFFFF;
+// Текст белый на всех темах
+
+$colorTextContrastThemed: #FFFFFF;
+// Контрастный цвет текста меняется в зависимости от темы
+
+$colorTextLink: #2D81E0;
+// Основной цвет для ссылок
+
+$colorTextLinkThemed: #2D81E0;
+// Алььтернативный цвет ссылок
+
+$colorTextLinkVisited: #4986CC;
+// Цвет ссылок после перехода
+
+$colorTextAccent: #2688EB;
+// Текст акцентного цвета
+
+$colorTextAccentThemed: #2688EB;
+// Текст акцентного цвета, перекрашывается в белый на темной теме
+
+$colorTextPositive: #4BB44B;
+// Текст цвета положительной информации
+
+$colorTextNegative: #E64646;
+// Цвет с негативным подтекстом
+
+$colorTextMuted: #2C2D2E;
+// Текст с прозрачностью
+
+$colorLinkContrast: #FFFFFF;
+// Контрастный цвет ссылок для разных тем
+
+
+
+////////// Иконки
+$colorIconPrimary: #2C2D2E ;
+// Основной цвет иконок
+
+$colorIconPrimaryInvariably: #2C2D2E ;
+// Основной цвет иконок не меняется в зависимости от темы
+
+$colorIconSecondary: #99A2AD ;
+// Второстепенный цвет иконок
+
+$colorIconSecondaryAlpha: rgba(0,0,0,.36) ;
+// Второстепенный цвет иконок с прозрачностью
+
+$colorIconMedium: #818C99 ;
+// Средние по насыщенности иконки
+
+$colorIconMediumAlpha: rgba(0,0,0,.48) ;
+// Средние по насыщенности иконки с прозрачностью
+
+$colorIconTertiary: #B8C1CC ;
+// Третичный цвет иконок
+
+$colorIconTertiaryAlpha: rgba(0,0,0,.24) ;
+// Третичный цвет иконок с прозрачностью
+
+$colorIconContrast: #FFFFFF ;
+// Цвет иконок для разных тем оформления
+
+$colorIconContrastThemed: #FFFFFF ;
+// Контрастный цвет иконок меняется в зависимости от темы оформления
+
+$colorIconContrastSecondary: #F2F3F5 ;
+// Иконки одинаковые для светлой и темной темы
+
+$colorIconAccent: #2688EB ;
+// Иконки акцентного цвета
+
+$colorIconAccentThemed: #2688EB ;
+// Иконки акцентного цвета, перекрашивается в белый на темной теме
+
+$colorIconPositive: #4BB34B ;
+// Иконки цвета положительной информации
+
+$colorIconNegative: #E64646 ;
+// Икнонки цвета с негативным подтекстом
+
+
+
+////////// Фон
+$colorBackground : #EBEDF0 ;
+// Основной цвет страницы
+
+$colorBackgroundSecondary : #F5F5F5 ;
+// Второстепенный цвет
+
+$colorBackgroundSecondaryAlpha : rgba(0,0,0,.04) ; ;
+// Второстепенный цвет с прозрачностью
+
+$colorBackgroundTertiary : #F9F9F9 ;
+// Третичный цвет
+
+$colorBackgroundContent : #FFFFFF ;
+//Основной фон контента
+
+$colorBackgroundContrast : #FFFFFF ;
+// Контрастный фон -- одинаковый для разных тем
+
+$colorBackgroundContrastSecondaryAlpha : rgba(0,0,0,.2) ;
+// Контрастный фон с прозрачностью
+
+$colorBackgroundContrastInverse : #2D2D2E ;
+// Фон с инверсией (попап, всплывающее окно)
+
+$colorBackgroundModal : #FFFFFF ;
+// Фон модального окна (попап, всплывающее окно)
+
+$colorBackgroundModalInverse : #2D2D2E ;
+// Фон модального окна с инверсией (попа, всплывающее окно)
+
+$colorBackgroundAccent : #2688EB ;
+// Акцентный фон 
+
+$colorBackgroundAccentThemed : #2688EB ;
+// Акцентный фон, перекрашивается в белый на темной теме
+
+$colorBackgroundAccentTint : #5A9EFF ;
+// Третичный цвет для тултипа
+
+$colorBackgroundPositive : #4BB34B ;
+// Фон положительной информации
+
+$colorBackgroundNegative : #E64646 ;
+// Фон с негативным подтекстом
+
+$colorBackgroundNegativeTint : #FAEBEB ;
+// Тонированный фон для ошибок
+
+$colorBackgroundWarning : #FFF2D6 ;
+// Фон для информационных панелей
+
+$colorHeaderBackground : #FFFFFF ;
+// Фон шапки страницы
+
+$colorFieldBackground : #F2F3F5 ;
+// Фон для полей ввода и селектов
+
+
+
+////////// Обводка
+$colorSeparatorPrimary : #D7D8D9 ;
+// Основной цвет разделителей на белом фоне
+
+$colorSeparatorPrimaryAlpha : rgba(0,0,0,.12) ;
+// Цвет разделителей с прозрачностью
+
+$colorSeparatorSecondary : #E1E3E6 ;
+// Второстепенный цвет разделителей на светло-сером фоне
+
+$colorImageBorderAlpha: rgba(0,0,0,.08);
+// Обводка для изображений
+
+$colorStrokeAccent: #2688EB ;
+// Обводка в акцентных кнопках
+
+$colorStrokeAccentThemed: #2688EB ;
+// Обводка в акцентных кнопках, перекрашивает в белый на темной теме
+
+$colorStrokePositive: #4BB34B ;
+// Обводка для кнопок
+
+$colorStrokeNegative: #E64646 ;
+// Обводка для кнопок
+
+$colorStrokeContrast: #FFFFFF ;
+// Обводка для кнопок
+
+$colorFieldBorderAlpha: rgba(0,0,0,.12) ;
+// Обводка полей ввода, селектов, кнопок

@@ -1,0 +1,100 @@
+// $accent: #2688eb;
+// $background: #ffffff;
+
+// // $form-background: #ebedf0;
+// $form-accent: #99a2ad;
+
+// $form : (
+//     "background": green
+// );
+
+// $theme-colors: (
+//   "success": #28a745,
+//   "info": #17a2b8,
+//   "warning": #ffc107,
+// )
+
+@use "./_variables/Colors/light" as light;
+
+$themes: (
+  light-mode: (
+    "colorTextPrimaryLight": light.$colorTextPrimaryLight,
+    "colorTextPrimaryInvariably": light.$colorTextPrimaryInvariably,
+    "colorTextSecondary": light.$colorTextSecondary,
+    "colorTextTertiary": light.$colorTextTertiary,
+    "colorTextSubhead": light.$colorTextSubhead,
+    "colorTextContrast": light.$colorTextContrast,
+    "colorTextContrastThemed": light.$colorTextContrastThemed,
+    "colorTextLink": light.$colorTextLink,
+    "colorTextLinkThemed": light.$colorTextLinkThemed,
+    "colorTextLinkVisited": light.$colorTextLinkVisited,
+    "colorTextAccent": light.$colorTextAccent,
+    "colorTextAccentThemed": light.$colorTextAccentThemed,
+    "colorTextPositive": light.$colorTextPositive,
+    "colorTextNegative": light.$colorTextNegative,
+    "colorTextMuted": light.$colorTextMuted,
+    "colorLinkContrast": light.$colorLinkContrast,
+    "colorIconPrimary": light.$colorIconPrimary,
+    "colorIconPrimaryInvariably": light.$colorIconPrimaryInvariably,
+    "colorIconSecondary": light.$colorIconSecondary,
+    "colorIconSecondaryAlpha": light.$colorIconSecondaryAlpha,
+    "colorIconMedium": light.$colorIconMedium,
+    "colorIconMediumAlpha": light.$colorIconMediumAlpha,
+    "colorIconTertiary": light.$colorIconTertiary,
+    "colorIconTertiaryAlpha": light.$colorIconTertiaryAlpha,
+    "colorIconContrast": light.$colorIconContrast,
+    "colorIconContrastThemed": light.$colorIconContrastThemed,
+    "colorIconContrastSecondary": light.$colorIconContrastSecondary,
+    "colorIconAccent": light.$colorIconAccent,
+    "colorIconAccentThemed": light.$colorIconAccentThemed,
+    "colorIconPositive": light.$colorIconPositive,
+    "colorIconNegative": light.$colorIconNegative,
+    "colorBackground": light.$colorBackground,
+    "colorBackgroundSecondary": light.$colorBackgroundSecondary,
+    "colorBackgroundSecondaryAlpha": light.$colorBackgroundSecondaryAlpha,
+    "colorBackgroundTertiary": light.$colorBackgroundTertiary,
+    "colorBackgroundContent": light.$colorBackgroundContent,
+    "colorBackgroundContrast": light.$colorBackgroundContrast,
+    "colorBackgroundContrastSecondaryAlpha":
+      light.$colorBackgroundContrastSecondaryAlpha,
+    "colorBackgroundContrastInverse": light.$colorBackgroundContrastInverse,
+    "colorBackgroundModal": light.$colorBackgroundModal,
+    "colorBackgroundModalInverse": light.$colorBackgroundModalInverse,
+    "colorBackgroundAccent": light.$colorBackgroundAccent,
+    "colorBackgroundAccentThemed": light.$colorBackgroundAccentThemed,
+    "colorBackgroundAccentTint": light.$colorBackgroundAccentTint,
+    "colorBackgroundPositive": light.$colorBackgroundPositive,
+    "colorBackgroundNegative": light.$colorBackgroundNegative,
+    "colorBackgroundNegativeTint": light.$colorBackgroundNegativeTint,
+    "colorBackgroundWarning": light.$colorBackgroundWarning,
+    "colorHeaderBackground": light.$colorHeaderBackground,
+    "colorFieldBackground": light.$colorFieldBackground,
+    "colorSeparatorPrimary": light.$colorSeparatorPrimary,
+    "colorSeparatorPrimaryAlpha": light.$colorSeparatorPrimaryAlpha,
+    "colorSeparatorSecondary": light.$colorSeparatorSecondary,
+    "colorImageBorderAlpha": light.$colorImageBorderAlpha,
+    "colorStrokeAccent": light.$colorStrokeAccent,
+    "colorStrokeAccentThemed": light.$colorStrokeAccentThemed,
+    "colorStrokePositive": light.$colorStrokePositive,
+    "colorStrokeNegative": light.$colorStrokeNegative,
+    "colorStrokeContrast": light.$colorStrokeContrast,
+    "colorFieldBorderAlpha": light.$colorFieldBorderAlpha,
+  )
+//   dark-mode:
+//   (
+//     // Todo
+//   ),
+);
+
+@mixin theme() {
+  @each $theme, $map in $themes {
+    $theme-map: $map !global;
+    .#{$theme} & {
+      @content;
+    }
+  }
+}
+
+@function theme-get($key) {
+  @return map-get($theme-map, $key);
+}
