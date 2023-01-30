@@ -64,9 +64,8 @@ async function reactToNewMessage(node: Element): Promise<void> {
   } else if (
     messagePeerID &&
     messageActionsBox &&
-    !messageActionsBox.getAttribute("action-box-modified")
+    messageActionsBox.childElementCount < 5
   ) {
-    messageActionsBox.setAttribute("action-box-modified", "true");
 
     let hideButton: HTMLSpanElement = Object.assign(
       document.createElement("span"),
